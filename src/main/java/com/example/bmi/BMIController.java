@@ -88,7 +88,7 @@ public class BMIController {
 
             height = Double.parseDouble(heightTextField.getText());
 
-            double value = 703 * (weight/Math.pow(height,2));
+            double value = weight/Math.pow(height,2);
 
             if(value<0){
                 throw new NumberFormatException();
